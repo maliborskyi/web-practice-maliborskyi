@@ -242,3 +242,111 @@ body {
     background: #262626;
     transform: scale(1.02);
 }
+
+
+/* СЕКЦІЯ БРЕНДІВ  */
+.brands-section {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.brands-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-img {
+    display: block;
+    object-fit: contain;
+    max-width: 100%; 
+}
+
+.brand-chanel {
+    width: 196px;
+    height: 33px;
+}
+
+.brand-lv {
+    width: 196px;
+    height: 25px;
+}
+
+.brand-prada {
+    width: 196px;
+    height: 32px;
+}
+
+.brand-ck {
+    width: 196px;
+    height: 33px;
+    object-fit: contain;
+}
+
+.brand-denim {
+    width: 184px;
+    height: 27px;
+    object-fit: cover;
+}
+
+/* КРУГЛІ ПЛАВАЮЧІ КНОПКИ СТОРІНКИ */
+.floating-buttons {
+    position: fixed;
+    right: 30px; 
+    bottom: 40px; 
+    display: flex;
+    flex-direction: row; 
+    gap: 35px;          
+    z-index: 9999;
+}
+
+.float-btn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.float-btn:hover {
+    transform: translateY(-3px);
+}
+
+.cart-btn {
+    width: 56px;         
+    height: 56px;        
+    background-color: #000000;
+    border-radius: 10px; 
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15); 
+}
+
+.cart-btn:hover {
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.25);
+}
+
+.top-btn {
+    width: 57px;
+    height: 57px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.float-btn img {
+    display: block;
+    object-fit: contain;
+}

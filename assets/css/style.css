@@ -362,7 +362,7 @@ body {
 /*  СЕКЦІЯ: DEALS OF THE MONTH */
 .deals-section {
     width: 100%;
-    padding: 80px 0;
+    padding: 155px 0;
     background-color: #ffffff;
 }
 
@@ -640,9 +640,9 @@ body {
 } 
 
 
-/* СЕКЦІЯ: NEW ARRIVALS */
+/* Секція: NEW ARRIVALS */
 .new-arrivals-section {
-    padding: 100px 0;
+    padding: 295px 0;
     background-color: #ffffff;
 }
 
@@ -823,4 +823,279 @@ body {
 
 .btn-view-more:hover {
     background-color: #333333; 
+}
+
+
+/* Секція: PEAKY BLINDERS */ 
+.peaky-section {
+    width: 100%;
+    max-width: 1920px; 
+    margin: 100px auto;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.peaky-banner {
+    position: relative;
+    width: 100%;
+    height: 570px; 
+    background: #F8F8F8; 
+    overflow: hidden; 
+}
+
+.peaky-separator {
+    position: absolute;
+    top: 0;
+    left: 54.86%; 
+    width: 2px; 
+    height: 100%;
+    background-color: #000000; 
+    z-index: 2;
+    pointer-events: none;
+    transform: skewX(-23deg); 
+    transform-origin: top;
+}
+
+/* Ліва частина */
+.peaky-left {
+    width: 55%; 
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+}
+
+.model-wrapper {
+    position: absolute;
+    left: 9.11%; 
+    top: 0;
+    width: 37.6%; 
+    height: 100%;
+    z-index: 2;
+}
+
+.peaky-model-img {
+    position: absolute;
+    bottom: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125%;
+    height: 125%; 
+    object-fit: contain; 
+    object-position: bottom center;
+    display: block;
+}
+
+/* Шар з лініями та кружечками поверх фото */
+.peaky-lines-overlay {
+    position: absolute;
+    top: 0;
+    left: 7.68%; 
+    width: 30.52%; 
+    height: 92.63%; 
+    pointer-events: none; 
+    z-index: 3;
+}
+
+.peaky-tag {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap; 
+    z-index: 5;
+    transform: translateY(-50%); 
+}
+
+/* Права частина */
+.peaky-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #DADADA;
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 41.8% 100%);
+    z-index: 1;
+}
+
+.peaky-right-content-zone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    z-index: 4;
+}
+
+.peaky-content {
+    max-width: 515px; 
+    width: 100%;    
+}
+
+.peaky-subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.peaky-title {
+    font-family: 'Volkhov', serif;
+    font-size: 46px;
+    font-weight: 400;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.peaky-desc-title {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: regular;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.peaky-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    line-height: 24px; 
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.peaky-size-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.size-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 28px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.peaky-price {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.peaky-cents {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.btn-buy-peaky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 207px;
+    height: 56px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.btn-buy-peaky:hover {
+    background: #333333;
+}
+
+/* Нижній ряд */
+.features-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 116px; 
+    max-width: 1920px; 
+    margin: 72px auto 0 auto; 
+    padding: 40px 20px; 
+    border-radius: 5px;
+    flex-wrap: wrap; 
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.feature-icon {
+    width: 50px;     
+    height: 50px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;   
+}
+
+.feature-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.feature-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #484848;
+    margin: 0;
+}
+
+.feature-text p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #484848;
+    margin: 0;
+}
+
+@media (max-width: 1400px) {
+    .features-row {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .features-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 40px 20px;
+    }
 }

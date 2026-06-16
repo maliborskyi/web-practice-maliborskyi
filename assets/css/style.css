@@ -128,7 +128,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
     display: block;
     object-position: 25% center;
 }
@@ -1085,17 +1084,347 @@ body {
     margin: 0;
 }
 
-@media (max-width: 1400px) {
-    .features-row {
-        gap: 50px;
-    }
+
+/* Instagram Section */
+.instagram-section {
+    padding: 222px 0;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden; 
 }
 
-@media (max-width: 900px) {
-    .features-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        padding: 40px 20px;
-    }
+.instagram-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.instagram-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 59px;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.instagram-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8A8A8A;
+    max-width: 614px;
+}
+
+.instagram-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    gap: 0;
+    margin-top: 100px;
+}
+
+.insta-img {
+    object-fit: cover;
+    display: block;
+    margin: 0; 
+    padding: 0;
+    border: none;
+    flex-shrink: 0;
+}
+
+.insta-edge { 
+    width: calc(320 / 1920 * 100%);
+    aspect-ratio: 320 / 308;
+    height: auto; 
+}
+
+.insta-tall { 
+    width: calc(256 / 1920 * 100%);
+    aspect-ratio: 256 / 380;
+    height: auto;
+}
+
+.insta-short { 
+    width: calc(256 / 1920 * 100%);
+    aspect-ratio: 256 / 308;
+    height: auto;
+}
+
+
+/* Reviews section */
+.reviews-section {
+    background-color: #FAFAFA;
+    padding: 100px 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.reviews-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 59px;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.reviews-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8A8A8A;
+    max-width: 614px;
+    margin: 0 auto;
+}
+
+.reviews-slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 59px; 
+}
+
+/* Базові стилі для всіх карток відгуків */
+.reviews-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.main-card {
+    box-shadow: 0px 20px 60px rgba(46, 33, 61, 0.08);
+    width: 864px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 50px 70px;
+    gap: 60px;
+    z-index: 2; 
+    position: relative;
+    flex-shrink: 0;
+    margin: 0 -344px; 
+}
+
+/* Бокові картки */
+.side-card {
+    box-shadow: 0px 15px 45px rgba(46, 33, 61, 0.08);
+    width: 648px;
+    height: 300px;
+    z-index: 1;
+    position: relative;
+    flex-shrink: 0;
+    opacity: 0.4; 
+    transform: scale(0.85); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.left-card {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.side-image-wrap {
+    position: relative;
+    width: 181px;
+    height: 181px;
+}
+
+.side-bg-rect {
+    position: absolute;
+    width: 181px;
+    height: 181px;
+    background: #D9D9D9;
+    left: -15px;
+    top: 15px;
+    z-index: 1;
+}
+
+.side-photo {
+    position: relative;
+    width: 181px;
+    height: 181px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.side-info {
+    width: 314px;
+}
+
+.side-quote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #484848;
+    margin-bottom: 20.25px;
+}
+
+.side-stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 22.5px;
+    align-items: center; 
+    margin-left: -32px;
+}
+
+.side-separator {
+    width: 172px;
+    height: 1px;
+    background: #484848;
+    margin-bottom: 11.25px;
+}
+
+.side-name {
+    font-family: 'Volkhov', serif;
+    font-size: 24px;
+    line-height: 31px;
+    color: #484848;
+    margin-bottom: 9.5px;
+}
+
+.side-role {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #484848;
+}
+
+/* Внутрішні елементи головної картки */
+.reviews-image-wrap {
+    position: relative;
+    width: 242px;
+    height: 242px;
+    flex-shrink: 0;
+}
+
+.reviews-bg-rect {
+    position: absolute;
+    width: 242px;
+    height: 242px;
+    left: -21px;
+    top: 20px;
+    background: #D9D9D9;
+    z-index: 1;
+}
+
+.reviews-photo {
+    position: relative;
+    width: 242px;
+    height: 242px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.reviews-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews-quote {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #484848;
+    margin-bottom: 27px;
+}
+
+.reviews-stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.reviews-separator {
+    width: 230px;
+    height: 1px;
+    background: #484848;
+    margin-bottom: 15px;
+}
+
+.reviews-name {
+    font-family: 'Volkhov', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    color: #484848;
+    margin-bottom: 13px;
+}
+
+.reviews-role {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #484848;
+}
+
+.reviews-nav {
+    display: flex;
+    gap: 0px; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reviews-nav-btn {
+    width: 78px;  
+    height: 78px;
+    background: transparent; 
+    box-shadow: none; 
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.reviews-nav-btn + .reviews-nav-btn {
+    margin-left: -13px; 
+}
+
+.reviews-nav-btn:hover {
+    transform: scale(1.08);
+}
+
+.reviews-nav-btn img,
+.reviews-nav-btn svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
 }

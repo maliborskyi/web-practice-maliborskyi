@@ -96,7 +96,7 @@ body {
     width: 100%;
     margin-top: 94px; 
     background-color: #ffffff;
-    padding-bottom: 40px;
+    padding-bottom: 27px;
 }
 
 .hero-container {
@@ -255,7 +255,8 @@ body {
     width: 100%;
     padding: 60px 0;
     background-color: #ffffff;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 35px;
 }
 
 .brands-container {
@@ -362,7 +363,7 @@ body {
 .deals-section {
     width: 100%;
     min-height: 782px; 
-    padding: 145px 0; 
+    padding: 155px 0; 
     background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 0%);
     box-sizing: border-box;
 }
@@ -1072,7 +1073,7 @@ body {
     object-fit: contain; 
 }
 
-.feature-text h4 {
+.feature-text h3 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
